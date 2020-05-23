@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="241px" height="201px" viewBox="0 0 241 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>briefcase</title>
+    <defs>
+        <path d="M120,0 L100,0 C88.97,0 80,8.97 80,20 L80,30 L100,30 L100,20 L120,20 L120,0 Z" id="path-1"></path>
+        <path d="M0,81 L0,173.408027 C0,188.658863 12.4025,201 27.7291667,201 L121,201 L121,120.732441 L118.58,120.331104 L0,81 Z" id="path-2"></path>
+        <path d="M121,30 L100.833333,30 L80.6666667,30 L27.7291667,30 C12.4025,30 0,42.3 0,57.5 L0,80.4 L118.58,119.6 L121,120 L121,30 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-+-Cards" transform="translate(-600.000000, -85.000000)" fill-rule="nonzero">
+            <g id="briefcase" transform="translate(600.000000, 85.000000)">
+                <path d="M150,45 C144.48,45 140,40.52 140,35 L140,20 L100,20 L100,35 C100,40.52 95.52,45 90,45 C84.48,45 80,40.52 80,35 L80,20 C80,8.97 88.97,0 100,0 L140,0 C151.03,0 160,8.97 160,20 L160,35 C160,40.52 155.52,45 150,45 Z" id="Path" fill="#C98686"></path>
+                <path d="M122.91,120.331104 L120.5,120.732441 L118.09,120.331104 L0,81 L0,173.408027 C0,188.658863 12.35125,201 27.6145833,201 L213.385417,201 C228.64875,201 241,188.658863 241,173.408027 L241,81 L122.91,120.331104 Z" id="Path" fill="#C98686"></path>
+                <path d="M241,57.5 L241,80.4 L122.91,119.6 L120.5,120 L118.09,119.6 L0,80.4 L0,57.5 C0,42.3 12.35125,30 27.6145833,30 L213.385417,30 C228.64875,30 241,42.3 241,57.5 Z" id="Path" fill="#E2C2BE"></path>
+                <g id="Path">
+                    <use fill="#C98686" xlink:href="#path-1"></use>
+                    <use fill-opacity="0.1" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+                <g id="Path">
+                    <use fill="#C98686" xlink:href="#path-2"></use>
+                    <use fill-opacity="0.1" fill="#000000" xlink:href="#path-2"></use>
+                </g>
+                <g id="Path">
+                    <use fill="#E2C2BE" xlink:href="#path-3"></use>
+                    <use fill-opacity="0.1" fill="#000000" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
