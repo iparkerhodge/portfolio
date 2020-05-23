@@ -30,7 +30,8 @@
 
 .info {
     margin: 0;
-    padding-left: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     flex-basis: 100%;
     margin-bottom: -9.5rem;
     z-index: 2;
