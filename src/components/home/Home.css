@@ -28,17 +28,24 @@
     width: 100%;
 }
 
-.name {
+.info {
     margin: 0;
     padding-left: 3rem;
     flex-basis: 100%;
+    margin-bottom: -9.5rem;
+    z-index: 2;
+}
+
+.name {
     font-weight: 900;
     font-size: 120px;
     color: #264653;
     text-decoration: underline #2A9D8F;
     letter-spacing: -6px;
-    margin-bottom: -9.5rem;
-    z-index: 2;
+}
+
+.description {
+    color: #264653;
 }
 
 

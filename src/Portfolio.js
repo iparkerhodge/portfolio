@@ -1,55 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useTrail, animated } from 'react-spring'
-import { Transition } from 'react-spring/renderprops'
-import { makeStyles } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Tabs, Tab } from '@material-ui/core'
+import TopNav from './components/nav/TopNav'
 import './Portfolio.css'
 import Home from './components/home/Home'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    toolbar: {
-        backgroundColor: '#E9C46A',
-        minHeight: 128,
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: theme.spacing(1),
-    },
-    title: {
-        flexGrow: 1,
-        alignSelf: 'flex-end',
-    },
-}));
-
 const items = ['welcome', 'to', 'my', 'portfolio']
 const config = { mass: 5, tension: 2000, friction: 200 }
-
-const TopNav = ({page, setPage}) => {
-    const classes = useStyles()
-    const handleChange = (e, newValue) => {
-        setPage(newValue)
-    }
-
-    return (
-        <div className={classes.root}>
-            <AppBar>
-                <Toolbar className={classes.toolbar}>
-                    <Tabs value={page} onChange={handleChange} variant={'standard'}>
-                        <Tab label="Home" value={'home'}></Tab>
-                        <Tab label="About Me" value={'about'}></Tab>
-                        <Tab label="Projects" value={'projects'}></Tab>
-                        <Tab label="technologies" value='techs'></Tab>
-                    </Tabs>
-                </Toolbar>
-            </AppBar>
-        </div>
-    )
-}
 
 const Portfolio = () => {
     const [page, setPage] = useState('welcome')
@@ -107,17 +63,7 @@ const Portfolio = () => {
 
     return (
         <div>
-            {(page !== 'welcome') 
-            ? <Transition
-                items={ShadowRoot}
-                from={{ opacity: 0 }}
-                enter={{ opacity: 1 }}
-                leave={{ opacity: 0 }}>
-                {show => show && (props =>
-                    <TopNav style={props} className='cardList' page={page} setPage={setPage}/>
-                )}
-            </Transition>
-            : ''}
+            {(page !== 'welcome') ? <TopNav page={page} setPage={setPage}/> : ''}
             {current}
         </div>
     )

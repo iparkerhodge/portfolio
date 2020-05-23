@@ -12,12 +12,15 @@ const Home = () => {
                 enter={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
                 leave={{ transform: 'translate3d(0,-80px,0)', opacity: 0 }}>
                 {show => show && (props =>
-                    <div className='name' style={props}>Parker Hodge</div>
+                    <div className='info'>
+                        <div className='name' style={props}>Parker Hodge</div>
+                        <div className='description'>software developer</div>
+                    </div>
                 )}
             </Transition>
             <Transition
                 items={ShadowRoot}
-                trail={1000}
+                trail={500}
                 from={{ transform: 'translate3d(0,80px,0)', opacity: 0 }}
                 enter={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
                 leave={{ transform: 'translate3d(0,80px,0)', opacity: 0 }}>
