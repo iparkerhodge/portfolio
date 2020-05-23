@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
     toolbar: {
         backgroundColor: '#E9C46A',
         minHeight: 128,
-        alignItems: 'flex-start',
+        alignItems: 'center',
+        justifyContent: 'center',
         paddingTop: theme.spacing(1),
     },
     title: {
@@ -38,7 +39,7 @@ const TopNav = ({page, setPage}) => {
         <div className={classes.root}>
             <AppBar>
                 <Toolbar className={classes.toolbar}>
-                    <Tabs value={page} onChange={handleChange}>
+                    <Tabs value={page} onChange={handleChange} variant={'standard'}>
                         <Tab label="Home" value={'home'}></Tab>
                         <Tab label="About Me" value={'about'}></Tab>
                         <Tab label="Projects" value={'projects'}></Tab>
