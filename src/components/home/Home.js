@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { ReactComponent as Nashville } from '../../images/Nashville.svg'
 import { Transition } from 'react-spring/renderprops'
+import { Fade } from '@material-ui/core'
 import './Home.css'
 
 const Home = () => {
+    const [fade, set] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {set(true)}, [300])
+    }, [])
+
     return (
         <div className='homeContainer'>
             <Transition
@@ -14,7 +21,9 @@ const Home = () => {
                 {show => show && (props =>
                     <div className='info'>
                         <div className='name' style={props}>Parker Hodge</div>
-                        <div className='description'>software developer</div>
+                        <Fade in={fade}>
+                            <div className='description'>software developer</div>
+                        </Fade>
                     </div>
                 )}
             </Transition>
