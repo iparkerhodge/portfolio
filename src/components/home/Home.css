@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
-    background-color: #2A6049;
     overflow: hidden;
 }
 
@@ -35,8 +34,31 @@
     flex-basis: 100%;
     font-family: Roboto-Black;
     font-size: 120px;
-    color: #F2B880;
-    text-decoration: underline #4357AD;
+    color: #264653;
+    text-decoration: underline #2A9D8F;
     letter-spacing: -6px;
-    margin-bottom: -11rem;
+    margin-bottom: -9.5rem;
+    z-index: 2;
+}
+
+
+.homeCard {
+    height: 4rem;
+    width: 8.5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.cardImage {
+    padding: 0.5rem;
+}
+
+.cardText {
+    color: #E76F51;
+    font-weight: 900;
+}
+
+.profileImage {
+    height: 10rem;
 }

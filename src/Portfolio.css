@@ -4,9 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2A6049;
 }
 
 .welcomeMessage {
-    color: #F2B880;
+    color: #2A9D8F;
+    text-decoration: underline #E9C46A;
 }

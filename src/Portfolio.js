@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { useTrail, animated } from 'react-spring'
 import './Portfolio.css'
-import Home from './components/Home'
+import Home from './components/home/Home'
 
 const items = ['welcome', 'to', 'my', 'portfolio']
 const config = { mass: 5, tension: 2000, friction: 200 }
 
 const Portfolio = () => {
-    const [page, setPage] = useState('welcome')
+    const [page, setPage] = useState('home')
     const [current, setCurrent] = useState()
     const [toggle, set] = useState(true)
     const trail = useTrail(items.length, {
