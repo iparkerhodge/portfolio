@@ -31,13 +31,13 @@ const AboutMe = () => {
                         <Divider />
                         <CardActionArea>
                             <ButtonGroup>
-                                <IconButton>
+                                <IconButton href='https://github.com/iparkerhodge'>
                                     <Github />
                                 </IconButton>
-                                <IconButton>
+                                <IconButton href='https://www.linkedin.com/in/iparkerhodge/'>
                                     <LinkedIn />
                                 </IconButton>
-                                <IconButton>
+                                <IconButton href='https://twitter.com/parkerhodgedev'>
                                     <Twitter />
                                 </IconButton>
                             </ButtonGroup>
