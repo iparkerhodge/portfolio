@@ -40,7 +40,7 @@ const TopNav = ({ page, setPage }) => {
             <div className={classes.root}>
                 <AppBar>
                     <Toolbar className={classes.toolbar}>
-                        <Tabs value={page} onChange={handleChange} variant={'standard'}>
+                        <Tabs value={page} onChange={handleChange} variant={'standard'} indicatorColor="primary">
                             <Tab label="Home" value={'home'}></Tab>
                             <Tab label="About Me" value={'about'}></Tab>
                             <Tab label="Projects" value={'projects'}></Tab>

@@ -1,0 +1,22 @@
+.about{
+    margin-top: 150px;
+    font-size: 76px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__image {
+    flex-basis: 20%;
+    width: 20rem;
+    height: auto;
+}
+
+.about__main {
+    flex-basis: 60%;
+}
+
+.spotify {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
