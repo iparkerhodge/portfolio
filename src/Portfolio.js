@@ -4,6 +4,7 @@ import TopNav from './components/nav/TopNav'
 import './Portfolio.css'
 import Home from './components/home/Home'
 import AboutMe from './components/about/AboutMe'
+import Projects from './components/projects/Projects'
 
 const items = ['welcome', 'to', 'my', 'portfolio']
 const config = { mass: 5, tension: 2000, friction: 200 }
@@ -50,6 +51,10 @@ const Portfolio = () => {
         <AboutMe />
     )
 
+    const projects = (
+        <Projects />
+    )
+
     useEffect(() => {
         if (page === 'welcome') {
             setCurrent(welcome)
@@ -59,6 +64,9 @@ const Portfolio = () => {
         }
         else if (page === 'about') {
             setCurrent(about)
+        }
+        else if (page === 'projects') {
+            setCurrent(projects)
         }
     }, [page])
 

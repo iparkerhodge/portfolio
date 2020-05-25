@@ -1,0 +1,15 @@
+.projectsContainer {
+    margin-top: 120px;
+}
+
+.project {
+    margin: 0 2rem;
+    height: 80vh;
+}
+
+.arrowContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+

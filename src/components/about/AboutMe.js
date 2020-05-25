@@ -30,7 +30,6 @@ const AboutMe = () => {
                         <Typography variant='subtitle1'>A full-stack software engineer with a passion to design and create engaging web applications</Typography>
                         <Divider />
                         <CardActionArea>
-                            <ButtonGroup>
                                 <IconButton href='https://github.com/iparkerhodge'>
                                     <Github />
                                 </IconButton>
@@ -40,7 +39,6 @@ const AboutMe = () => {
                                 <IconButton href='https://twitter.com/parkerhodgedev'>
                                     <Twitter />
                                 </IconButton>
-                            </ButtonGroup>
                         </CardActionArea>
                     </CardContent>
                     <CardContent>
