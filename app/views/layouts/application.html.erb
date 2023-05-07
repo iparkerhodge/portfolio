@@ -9,10 +9,8 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag "application" %>
   </head>
-  <body>
-    <main class="container">
-      <%= render "shared/header" %>
-      <%= yield %>
-    </main>
+  <body class="box-border" style="min-height: 100vh;">
+    <%= render "shared/header" %>
+    <%= yield %>
   </body>
 </html>
