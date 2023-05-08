@@ -94,12 +94,14 @@ const handleInput = (input: string): string => {
         case 'help':
             return `
                 <p>Options:</p>
-                <br/>
                 <div class='pl-2 grid grid-cols-5'>
-                    <p>- clear</p> <p>clear the terminal</p>
+                    <p>- clear</p> <p class='col-span-4'>Clear the terminal.</p>
                 </div>
                 <div class='pl-2 grid grid-cols-5'>
-                    <p>- socials</p> <p>list my socials</p>
+                    <p>- ls</p> <p class='col-span-4'>List the sitemap and navigate to new pages.</p>
+                </div>
+                <div class='pl-2 grid grid-cols-5'>
+                    <p>- socials</p> <p class='col-span-4'>List my socials.</p>
                 </div>
             `
         case 'socials':
@@ -109,7 +111,7 @@ const handleInput = (input: string): string => {
                         <img src='${twitter}' class='h-6 w-auto'/>
                         <p>twitter</p>
                     </a>
-                    <a href='https://linkedin.com/in/iparkerhodge' target="_blank" class='flex flex-col items-center'>
+                    <a href='https://linkedin.com/in/parkerhodgedev' target="_blank" class='flex flex-col items-center'>
                         <img src='${li}' class='h-6 w-auto'/>
                         <p>linkedin</p>
                     </a>
@@ -118,6 +120,14 @@ const handleInput = (input: string): string => {
                         <p>github</p>
                     </a>
                 </div>
+            `
+        case 'ls':
+            return `
+            <p>Pages:</p>
+            <p class='ml-2'>- about</p>
+            <p class='ml-2'>- resume</p>
+            <br/>
+            <p>Navigate to a new page with 'cd {page_name}'</p>
             `
         default:
             return `<p>Unrecognized command. Type 'help' to see a list of commands.</p>`

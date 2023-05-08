@@ -3,7 +3,7 @@ import Console from '../../console'
 
 const DesktopDetails: React.FC = () => (
     <div className='h-full flex flex-col pt-8'>
-        <div className='h-1/2 px-6'>
+        <div className='h-1/2 px-6 flex flex-col items-center justify-center'>
             <div className='text-[60px] font-bold mb-6'>
                 <div className='whitespace-nowrap leading-[3.5rem]'>Hi! I am
                     <span role="img" aria-label="wave" className='relative left-14 bottom-5 text-7xl'>👋</span>
