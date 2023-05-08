@@ -109,7 +109,7 @@ const handleInput = (input: string): string => {
                         <img src='${twitter}' class='h-6 w-auto'/>
                         <p>twitter</p>
                     </a>
-                    <a href='https://linkedin.com/in/parkerhodgedev' target="_blank" class='flex flex-col items-center'>
+                    <a href='https://linkedin.com/in/iparkerhodge' target="_blank" class='flex flex-col items-center'>
                         <img src='${li}' class='h-6 w-auto'/>
                         <p>linkedin</p>
                     </a>
