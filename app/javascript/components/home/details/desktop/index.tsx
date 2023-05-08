@@ -1,4 +1,5 @@
 import React from 'react'
+import Console from '../../console'
 
 const DesktopDetails: React.FC = () => (
     <div className='h-full flex flex-col pt-8'>
@@ -16,7 +17,7 @@ const DesktopDetails: React.FC = () => (
             </div>
         </div>
         <div className='w-full h-1/2 bg-black'>
-            <p>hello</p>
+            <Console />
         </div>
     </div>
 )
