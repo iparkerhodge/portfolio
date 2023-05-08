@@ -1,3 +1,4 @@
+import React from 'react'
 import twitter from '../../../../assets/images/twitter.svg'
 import li from '../../../../assets/images/linkedin.svg'
 import gh from '../../../../assets/images/github.svg'
