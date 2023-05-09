@@ -8,7 +8,7 @@ const ConsoleInput: React.FC = () => {
     }
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === "Enter") {
+        if (e.key === "Enter" && state.loading === false) {
             dispatch(new Action.SubmitInput)
         }
     }

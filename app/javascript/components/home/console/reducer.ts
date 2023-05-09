@@ -90,18 +90,26 @@ export namespace Action {
 }
 
 const handleInput = (input: string): string => {
-    switch (input) {
+    const commandArray = input.split(' ')
+    const command = commandArray[0]
+    const options = commandArray[1]
+    switch (command) {
         case 'help':
             return `
-                <p>Options:</p>
                 <div class='pl-2 grid grid-cols-5'>
-                    <p>- clear</p> <p class='col-span-4'>Clear the terminal.</p>
+                    <p>Commands:</p> <p class=''>Options:</p> <p class='col-span-3'>Description:</p>
                 </div>
                 <div class='pl-2 grid grid-cols-5'>
-                    <p>- ls</p> <p class='col-span-4'>List the sitemap and navigate to new pages.</p>
+                    <p>- cd</p> <p>{page_name}</p> <p class='col-span-4 col-start-3'>Navigate to a new page on this site.</p>
                 </div>
                 <div class='pl-2 grid grid-cols-5'>
-                    <p>- socials</p> <p class='col-span-4'>List my socials.</p>
+                    <p>- clear</p> <p class='col-span-4 col-start-3'>Clear the terminal.</p>
+                </div>
+                <div class='pl-2 grid grid-cols-5'>
+                    <p>- ls</p> <p class='col-span-4 col-start-3'>List the sitemap and navigate to new pages.</p>
+                </div>
+                <div class='pl-2 grid grid-cols-5'>
+                    <p>- socials</p> <p class='col-span-4 col-start-3'>List my socials.</p>
                 </div>
             `
         case 'socials':
@@ -125,10 +133,29 @@ const handleInput = (input: string): string => {
             return `
             <p>Pages:</p>
             <p class='ml-2'>- about</p>
+            <p class='ml-2'>- contact</p>
+            <p class='ml-2'>- projects</p>
             <p class='ml-2'>- resume</p>
             <br/>
             <p>Navigate to a new page with 'cd {page_name}'</p>
             `
+        case 'cd':
+            switch (options) {
+                case 'about':
+                    window.location.href = '/about'
+                    break;
+                case 'projects':
+                    window.location.href = '/projects'
+                    break;
+                case 'resume':
+                    window.location.href = '/resume'
+                    break;
+                default:
+                    return `Unable to find page ${options}. Use command 'ls' to list available pages.`
+            }
+            break;
+        case 'quit':
+            return "Lol. Just close the tab. Thanks for checking out my page!"
         default:
             return `<p>Unrecognized command. Type 'help' to see a list of commands.</p>`
     }
