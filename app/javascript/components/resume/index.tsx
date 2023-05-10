@@ -19,7 +19,7 @@ const Resume = () => {
     }
 
     return (
-        <article className='w-screen px-4 sm:px-40 font-lato pb-20'>
+        <article className='w-screen px-4 sm:px-40 font-lato'>
             <section className={classes.section}>
                 <div className='col-span-1'>
                     <h1 className={classes.name}>Parker</h1>
