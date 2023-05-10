@@ -7,7 +7,6 @@ import web from '../../../assets/icons/website.png'
 const Resume = () => {
     const classes = {
         abbreviator: 'hidden sm:inline',
-        bold: 'font-black',
         details: 'text-[10px] sm:text-base',
         jobDesc: 'text-xs sm:text-sm mt-2',
         jobTitle: 'mt-6 leading-4 text-sm sm:text-base',
@@ -18,10 +17,6 @@ const Resume = () => {
         socialsImage: 'h-3 sm:h-4',
         title: 'mt-2 font-black text-xs sm:text-2xl text-red-600',
     }
-
-    const Bold = ({ children }) => (
-        <span className={classes.bold}>{children}</span>
-    )
 
     return (
         <article className='w-screen px-4 sm:px-40 font-lato pb-20'>
@@ -58,10 +53,9 @@ const Resume = () => {
                 </div>
                 <div className={classes.sectionLeft}>
                     <p className='pt-4 text-xs sm:text-base'>I am a full-stack developer with 4 years of experience in developing web applications.
-                        I have a strong understanding of the <Bold>Ruby on Rails</Bold> and <Bold>React</Bold> frameworks, I have proficient knowledge
-                        of the <Bold>ruby</Bold>, <Bold>JS/TS</Bold>, and <Bold>SQL</Bold> languages and some experience
-                        with <Bold>C#</Bold> and <Bold>python</Bold>, and I have worked professionally
-                        with <Bold>AWS</Bold>, <Bold> Heroku</Bold>, <Bold>Redis</Bold>, <Bold>Docker</Bold>, <Bold>Elasticsearch</Bold> and <Bold>Algolia</Bold>.</p>
+                        I have a strong understanding of the Ruby on Rails and React frameworks, I have proficient knowledge of the ruby,
+                        JS/TS, and SQL languages and some experience with C# and python, and I have worked professionally with AWS, Heroku,
+                        Redis, Docker, Elasticsearch and Algolia.</p>
                 </div>
             </section>
             <section className={classes.section}>
