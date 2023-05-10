@@ -40,9 +40,11 @@ const Resume = () => {
                         <img src={li} className={classes.socialsImage} />
                         <p className={classes.socials}><span className={classes.abbreviator}>linkedin.com</span>/in/iparkerhodge</p>
                         <img src={tw} className={classes.socialsImage} />
-                        <p className={classes.socials}><span className={classes.abbreviator}>github.com</span>/iparkerhodge</p>
+                        <p className={classes.socials}>
+                            <span className={classes.abbreviator}>twitter.com/</span>
+                            <span className='inline sm:hidden'>@</span>parkerhodgedev</p>
                         <img src={gh} className={classes.socialsImage} />
-                        <p className={classes.socials}><span className={classes.abbreviator}>twitter.com/</span>parkerhodgedev</p>
+                        <p className={classes.socials}><span className={classes.abbreviator}>github.com</span>/iparkerhodge</p>
                     </div>
                 </div>
             </section >
