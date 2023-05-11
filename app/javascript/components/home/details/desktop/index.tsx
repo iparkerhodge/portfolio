@@ -12,7 +12,7 @@ const DesktopDetails: React.FC = () => (
             </div>
             <div className='mb-6 w-full sm:w-2/3 text-xs'>A software engineer with over 4 years experience in full-stack development</div>
             <div className='flex items-center'>
-                <button className='py-3 px-8 bg-red-600 text-white flex justify-center items-center text-bold'>Hire Me</button>
+                <button onClick={() => window.location.href = '/resume'} className='py-3 px-8 bg-red-600 text-white flex justify-center items-center text-bold'>Hire Me</button>
                 <a href='/projects' className='ml-6 cursor-pointer'>Projects <span className='text-xl relative top-0.5'>↗</span></a>
             </div>
         </div>
