@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
         "declaration": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -13,7 +14,12 @@
         "sourceMap": true,
         "target": "es5",
         "jsx": "react",
-        "noEmit": true
+        "noEmit": true,
+        "paths": {
+            "@images/*": [
+                "./app/assets/images/*"
+            ]
+        }
     },
     "exclude": [
         "**/*.spec.ts",

@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "kill_port",
+            "desc": "a simple bash script to display a menu of listening ports and select processes to kill",
+            "tags": [
+                "bash"
+            ],
+            "img": "kill_port.png"
+        },
+        {
+            "title": "Portfolio",
+            "desc": "My portfolio site",
+            "tags": [
+                "javascript",
+                "typescript",
+                "ruby"
+            ],
+            "img": "memoji.png"
+        }
+    ]
+}
