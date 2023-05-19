@@ -6,7 +6,7 @@ const Projects = () => (
     <main className='w-screen px-4 sm:px-40'>
         <div className='flex max-w-full flex-wrap gap-4 justify-center mt-6 sm:mt-10'>
             {
-                data.projects.map(p => <ProjectCard title={p.title} desc={p.desc} tags={p.tags} img={p.img} />)
+                data.projects.map(p => <ProjectCard data={p} />)
             }
         </div>
     </main>
