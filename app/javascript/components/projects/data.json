@@ -9,7 +9,20 @@
                 "ruby"
             ],
             "img": "memoji.png",
-            "github": "https://github.com/iparkerhodge/portfolio"
+            "github": "https://github.com/iparkerhodge/portfolio",
+            "workInProgress": true
+        },
+        {
+            "title": "Leitner Learning",
+            "desc": "A flashcard app that utilizes the Leitner System - a system of spaced repetiton - to improve memorization",
+            "tags": [
+                "javascript",
+                "typescript",
+                "rails"
+            ],
+            "img": "leitner.png",
+            "github": "https://github.com/iparkerhodge/leitner",
+            "workInProgress": true
         },
         {
             "title": "kill_port.sh",
