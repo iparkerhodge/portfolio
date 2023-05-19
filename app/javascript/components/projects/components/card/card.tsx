@@ -15,7 +15,7 @@ interface ProjectProps {
 const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
     return (
         <div className='w-80 h-96 border-2 flex flex-col items-stretch shadow-md rounded-md pb-6'>
-            <a className='cursor-pointer'>
+            <a href={data.github} target='_blank' className='cursor-pointer'>
                 <div className='flex justify-center py-2'>
                     <img src={require(`../../../../../assets/images/${data.img}`)} className='rounded h-40 w-auto' />
                 </div>

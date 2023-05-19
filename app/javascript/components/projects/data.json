@@ -17,7 +17,8 @@
             "tags": [
                 "bash"
             ],
-            "img": "kill_port.png"
+            "img": "kill_port.png",
+            "github": "https://github.com/iparkerhodge/shell-scritps"
         }
     ]
 }
