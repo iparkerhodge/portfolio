@@ -15,7 +15,7 @@ const About = () => (
                 <h1 className='justify-self-center font-bold text-xl sm:text-5xl text-center'>Parker Hodge</h1>
             </div>
             <div className='flex justify-center'>
-                <ul>
+                <ul className='hidden'>
                     <li className='h-4 sm:h-auto'><a href='#about-me' className='text-[10px] sm:text-base hover:underline decoration-red-600'>About Me</a></li>
                     <li className='h-4 sm:h-auto'><a href='#experiences' className='text-[10px] sm:text-base hover:underline decoration-red-600'>Experiences</a></li>
                     <li className='h-4 sm:h-auto'><a href='#references' className='text-[10px] sm:text-base hover:underline decoration-red-600'>References</a></li>
