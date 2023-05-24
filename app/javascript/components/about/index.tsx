@@ -36,6 +36,7 @@ const About = () => (
         <section id='references' className='mt-7 grid grid-cols-3'>
             <h3 className='text-semibold underline decoration-red-600 text-lg sm:text-3xl'>References</h3>
             <Reference data={data.references[0]} />
+            <Reference data={data.references[1]} />
         </section>
         <section id='test' className='mt-7 grid grid-cols-3 hidden'>
             <h3 className='text-semibold underline decoration-red-600 text-lg sm:text-3xl'>Something Else</h3>

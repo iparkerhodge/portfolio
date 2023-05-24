@@ -9,7 +9,7 @@ const Reference = ({ data }) => {
         return data.replaceAll(/\n/g, '<br />')
     }
     return (
-        <div className='col-span-2'>
+        <div className='col-span-2 col-start-2 mb-6'>
             <div className='mb-2'>
                 <h4 className='font-bold'>{data.name}</h4>
                 <a className='text-blue-600 hover:underline' href={data.linkedIn}>{data.title} at {data.employer}</a>
